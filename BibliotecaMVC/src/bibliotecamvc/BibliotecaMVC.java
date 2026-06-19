@@ -191,7 +191,17 @@ public class BibliotecaMVC {
             prestamoActualizado);
 
     break;
-    
+    case 10:
+
+    System.out.println("=== ELIMINAR PRESTAMO ===");
+
+    System.out.print("Posicion del prestamo: ");
+    int posicionEliminarPrestamo = leer.nextInt();
+
+    gestion.eliminarPrestamo(
+            posicionEliminarPrestamo);
+
+    break;
                 case 11:
                     System.out.println("\n>>> Cerrando sesion... Que tenga un excelente dia");
                     break;
