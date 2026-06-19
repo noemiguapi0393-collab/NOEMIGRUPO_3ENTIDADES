@@ -18,7 +18,8 @@ public class MenuPrincipal {
         System.out.println("2. Registrar Usuario");
         System.out.println("3. Registrar Préstamo");
         System.out.println("4. Mostrar Reportes");
-        System.out.println("5. Salir");
+        System.out.println("5. Ayuda del Sistema");
+        System.out.println("6. Salir");
         System.out.println("*********************************");
         System.out.print("Seleccione una opción: ");
         
