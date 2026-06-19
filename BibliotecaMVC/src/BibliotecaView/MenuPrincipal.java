@@ -21,6 +21,10 @@ public class MenuPrincipal {
         System.out.println("4. Mostrar Reportes");
         System.out.println("5. actualizar libro");
         System.out.println("6. eliminar libro ");
+        System.out.println("7.actualizar usuario");
+        System.out.println("8.eliminar usuario");
+        System.out.println("9.actulizar prestamo");
+        System.out.println("10.eliminar prestamo ");
         System.out.println("======================================");
         System.out.print("Seleccione una opcion: ");
         
