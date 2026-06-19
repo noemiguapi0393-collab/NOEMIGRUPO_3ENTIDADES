@@ -34,5 +34,8 @@ public class GestionBiblioteca {
       ListaUsuarios.add(usuario);
       System.out.println("Usuario guardado con exito");
   }
-  
+  public void registrarPrestamo(Prestamo prestamo){
+      ListaPrestamo.add(prestamo);
+      System.out.println("Prestamo registrado con exito");
+  }
 }
