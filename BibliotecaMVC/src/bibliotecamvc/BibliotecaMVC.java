@@ -3,12 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package bibliotecamvc;
-
+import java.util.Scanner;
 import BibliotecaController.GestionBiblioteca;
 import BibliotecaView.MenuPrincipal;
 
 public class BibliotecaMVC {
     public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
         MenuPrincipal vista = new MenuPrincipal();
         GestionBiblioteca gestion = new GestionBiblioteca();
         int opcion;
@@ -20,6 +21,7 @@ public class BibliotecaMVC {
                     break;
                 case 1:
                     System.out.println("\n>>> [REGISTRO]: Abriendo formulario de Libros...");
+                    
                     break;
                 case 2:
                     System.out.println("\n>>> [REGISTRO]: Abriendo formulario de Usuarios...");
