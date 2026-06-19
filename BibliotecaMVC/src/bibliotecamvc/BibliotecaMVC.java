@@ -150,7 +150,17 @@ public class BibliotecaMVC {
             usuarioActualizado);
 
     break;
-    
+    case 8:
+
+    System.out.println("=== ELIMINAR USUARIO ===");
+
+    System.out.print("Posicion del usuario: ");
+    int posicionEliminarUsuario = leer.nextInt();
+
+    gestion.eliminarUsuario(
+            posicionEliminarUsuario);
+
+    break;
                 case 11:
                     System.out.println("\n>>> Cerrando sesion... Que tenga un excelente dia");
                     break;
