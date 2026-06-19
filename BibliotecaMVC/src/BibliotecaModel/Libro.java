@@ -28,4 +28,10 @@ public String getTitulo() {
 public String getAutor() {
     return autor;
 }
+@Override
+public String toString() {
+    return "ISBN: " + isbn +
+           ", Titulo: " + titulo +
+           ", Autor: " + autor;
+}
 }
