@@ -4,11 +4,13 @@
  */
 package bibliotecamvc;
 
+import BibliotecaController.GestionBiblioteca;
 import BibliotecaView.MenuPrincipal;
 
 public class BibliotecaMVC {
     public static void main(String[] args) {
         MenuPrincipal vista = new MenuPrincipal();
+        GestionBiblioteca gestion = new GestionBiblioteca();
         int opcion;
         do {
             opcion = vista.mostrarMenu();
