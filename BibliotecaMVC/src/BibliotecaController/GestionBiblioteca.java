@@ -26,6 +26,7 @@ public class GestionBiblioteca {
     public void registrarLibro(String isbn, Libro libro) {
         mapaLibros.put(isbn, libro);
         System.out.println("Libro guardado con éxito");
+        System.out.println("hola");
     }
 
     public void actualizarLibro(String isbn, Libro libro) {
