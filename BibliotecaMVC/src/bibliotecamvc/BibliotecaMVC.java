@@ -21,6 +21,7 @@ public class BibliotecaMVC {
             switch (opcion) {
                 
                 case 1:
+                    vista.limpiarBuffer();
                     System.out.println("\n=== REGISTRO DE LIBRO ===");
 
                     System.out.print("ISBN: ");
@@ -38,6 +39,7 @@ public class BibliotecaMVC {
                     
                    
                 case 2:
+                    vista.limpiarBuffer();
                     System.out.println("\n=== REGISTRO DE USUARIO ===");
                     System.out.print("Cedula: ");
                     String cedula = leer.nextLine();
@@ -47,6 +49,7 @@ public class BibliotecaMVC {
                    gestion.registarUsuario(nuevoUsuario);
                     break;
                 case 3:
+                    vista.limpiarBuffer();
                     System.out.println("\n=== REGISTRO DE PRESTAMO ===");
 
                     System.out.print("Codigo: ");
@@ -62,10 +65,10 @@ public class BibliotecaMVC {
                 case 4:
                     System.out.println("\n===== REPORTE DE LIBROS =====");
 
-                    if (gestion.getmapaLibros().isEmpty()) {
+                    if (gestion.getMapaLibros().isEmpty()) {
                     System.out.println("No existen libros registrados.");
                     } else {
-                     for (Libro libro : gestion.getmapaLibros().values()) {
+                     for (Libro libro : gestion.getMapaLibros().values()) {
                      System.out.println(libro);
                     }
                          }
@@ -82,10 +85,10 @@ public class BibliotecaMVC {
                         
                     System.out.println("\n===== REPORTE DE PRESTAMOS =====");
 
-                    if (gestion.getListaPrestamo().isEmpty()) {
+                    if (gestion.getListaPrestamos().isEmpty()) {
                     System.out.println("No existen prestamos registrados.");
                     } else {
-                    for (Prestamo prestamo : gestion.getListaPrestamo()) {
+                    for (Prestamo prestamo : gestion.getListaPrestamos()) {
                     System.out.println(prestamo);
                     }
                             }

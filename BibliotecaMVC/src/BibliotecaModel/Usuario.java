@@ -17,7 +17,7 @@ public class Usuario {
         this.nombre = nombre;
     }
     
-    public String getCedula() {
+    public String getCedula(){
         return cedula;
     }
 
