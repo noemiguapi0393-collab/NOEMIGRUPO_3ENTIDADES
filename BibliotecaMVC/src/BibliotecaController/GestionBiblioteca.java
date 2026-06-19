@@ -17,4 +17,6 @@ import java.util.HashMap;
  */
 public class GestionBiblioteca {
   private HashMap<String, Libro> mapaLibros;  
+  
+  private ArrayList<Usuario> ListaUsuarios;
 }
