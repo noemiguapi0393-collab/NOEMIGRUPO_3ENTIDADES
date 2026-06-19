@@ -22,6 +22,11 @@ public class GestionBiblioteca {
   private ArrayList<Prestamo> ListaPrestamo;
   
   public GestionBiblioteca(){
+      this.mapaLibros = new HashMap<>();
+      this.ListaUsuarios = new ArrayList<>();
+      this.ListaPrestamo = new ArrayList<>();
+  }
+  public void registrarLibros(String isbn, Libro libro){
       
   }
 }
