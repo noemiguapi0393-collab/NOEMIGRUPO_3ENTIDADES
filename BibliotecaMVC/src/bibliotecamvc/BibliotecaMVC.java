@@ -4,17 +4,47 @@
  */
 package bibliotecamvc;
 
-/**
- *
- * @author DAMA
- */
+// Importamos la vista para que el Main pueda usar el menú
+import BibliotecaView.MenuPrincipal;
+
 public class BibliotecaMVC {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Creamos el objeto del menú interactivo
+        MenuPrincipal vista = new MenuPrincipal();
+        
+        int opcion;
+
+        // Bucle repetitivo para que el menú no se cierre solo
+        do {
+            opcion = vista.mostrarMenu();
+            
+            // Switch-case para evaluar la opción marcada
+            switch (opcion) {
+                case 1:
+                    System.out.println("\n[Acción]: Has seleccionado Registrar Libro.");
+                    break;
+                    
+                case 2:
+                    System.out.println("\n[Acción]: Has seleccionado Registrar Usuario.");
+                    break;
+                    
+                case 3:
+                    System.out.println("\n[Acción]: Has seleccionado Registrar Préstamo.");
+                    break;
+                    
+                case 4:
+                    System.out.println("\n[Acción]: Has seleccionado Mostrar Reportes.");
+                    break;
+                    
+                case 5:
+                    System.out.println("\nSaliendo del sistema de biblioteca... ¡Hasta luego!");
+                    break;
+                    
+                default:
+                    System.out.println("\n[ERROR]: Opción no válida. Intenta de nuevo.");
+            }
+            
+        } while (opcion != 5);
     }
-    
 }
