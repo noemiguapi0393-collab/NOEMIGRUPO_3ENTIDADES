@@ -5,6 +5,7 @@
 package bibliotecamvc;
 import java.util.Scanner;
 import BibliotecaController.GestionBiblioteca;
+import BibliotecaModel.Libro;
 import BibliotecaView.MenuPrincipal;
 
 public class BibliotecaMVC {
@@ -33,7 +34,7 @@ public class BibliotecaMVC {
                     System.out.print("Autor: ");
                     String autor = leer.nextLine();
                     Libro nuevoLibro = new Libro(isbn, titulo, autor);
-
+                    gestion.registrarLibro(isbn, nuevoLibro);
                         break;
                     
                    
