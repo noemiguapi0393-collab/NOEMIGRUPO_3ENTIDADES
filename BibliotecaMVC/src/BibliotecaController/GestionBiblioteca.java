@@ -19,4 +19,5 @@ public class GestionBiblioteca {
   private HashMap<String, Libro> mapaLibros;  
   
   private ArrayList<Usuario> ListaUsuarios;
+  private ArrayList<Prestamo> ListaPrestamo;
 }
