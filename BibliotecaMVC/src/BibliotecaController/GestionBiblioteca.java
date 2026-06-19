@@ -31,7 +31,7 @@ public class GestionBiblioteca {
         System.out.println("4");
         System.out.println("5");
         System.out.println("6");
-        System.out.println("8");
+        System.out.println("9");
     }
 
     public void actualizarLibro(String isbn, Libro libro) {
