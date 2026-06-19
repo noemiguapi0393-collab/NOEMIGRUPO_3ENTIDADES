@@ -116,13 +116,25 @@ public class BibliotecaMVC {
             libroActualizado);
 
     break;
-                case 6:
+    case 6:
+
+    leer.nextLine();
+
+    System.out.println("=== ELIMINAR LIBRO ===");
+
+    System.out.print("ISBN del libro: ");
+    String isbnEliminar = leer.nextLine();
+
+    gestion.eliminarLibro(isbnEliminar);
+
+    break;
+                case 11:
                     System.out.println("\n>>> Cerrando sesion... Que tenga un excelente dia");
                     break;
                 default:
-                    System.out.println("Opcion invalida. Por favor, digite un numero del 1 al 6.");
+                    System.out.println("Opcion invalida. Por favor, digite un numero del 1 al 11.");
                    
             }
-        } while (opcion != 6);
+        } while (opcion != 11);
     }
 }
