@@ -7,6 +7,7 @@ import java.util.Scanner;
 import BibliotecaController.GestionBiblioteca;
 import BibliotecaModel.Libro;
 import BibliotecaModel.Usuario;
+import BibliotecaModel.Prestamo;
 import BibliotecaView.MenuPrincipal;
 
 public class BibliotecaMVC {
@@ -59,6 +60,19 @@ public class BibliotecaMVC {
                     break;
                 case 3:
                     System.out.println("\n>>> [REGISTRO]: Abriendo formulario de Préstamos...");
+                    leer.nextLine();
+
+                    System.out.println("\n=== REGISTRO DE PRESTAMO ===");
+
+                    System.out.print("Codigo: ");
+                    String codigo = leer.nextLine();
+
+                    System.out.print("Fecha: ");
+                    String fecha = leer.nextLine();
+
+                    Prestamo nuevoPrestamo = new Prestamo(codigo, fecha);
+
+                    gestion.registrarPrestamo(nuevoPrestamo);
                     break;
                 case 4:
                     System.out.println("\n>>> [REPORTES]: Generando listados del sistema...");
