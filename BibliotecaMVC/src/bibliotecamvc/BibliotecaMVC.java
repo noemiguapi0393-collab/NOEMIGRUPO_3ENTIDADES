@@ -39,7 +39,9 @@ public class BibliotecaMVC {
                     System.out.println("\nSaliendo del sistema de biblioteca... ¡Hasta luego!");
                     break;
                 default:
-                    System.out.println("\n[ERROR]: Opción no válida. Intenta de nuevo.");
+                    System.out.println("\nXXXXXXXXXXXXXX [ERROR] XXXXXXXXXXXXXX");
+                    System.out.println("Opción inválida. Por favor, digite un número del 1 al 6.");
+                    System.out.println("XXXXXXXXXXXXXXXX****************XXXXX");
             }
             
         } while (opcion != 6);
