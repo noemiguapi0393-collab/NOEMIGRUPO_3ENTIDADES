@@ -160,7 +160,38 @@ public class BibliotecaMVC {
     gestion.eliminarUsuario(
             posicionEliminarUsuario);
 
+    break;case 9:
+
+    System.out.println("\n=== ACTUALIZAR PRESTAMO ===");
+
+    System.out.println("\n=== PRESTAMOS REGISTRADOS ===");
+
+    for (int i = 0; i < gestion.getListaPrestamos().size(); i++) {
+
+        System.out.println(
+                i + " -> " +
+                gestion.getListaPrestamos().get(i));
+    }
+
+    System.out.print("Posicion del prestamo a actualizar: ");
+    int posicionPrestamo = leer.nextInt();
+    leer.nextLine(); // limpiar buffer
+
+    System.out.print("Nuevo codigo: ");
+    String codigoNuevo = leer.nextLine();
+
+    System.out.print("Nueva fecha: ");
+    String fechaNueva = leer.nextLine();
+
+    Prestamo prestamoActualizado =
+            new Prestamo(codigoNuevo, fechaNueva);
+
+    gestion.actualizarPrestamo(
+            posicionPrestamo,
+            prestamoActualizado);
+
     break;
+    
                 case 11:
                     System.out.println("\n>>> Cerrando sesion... Que tenga un excelente dia");
                     break;
