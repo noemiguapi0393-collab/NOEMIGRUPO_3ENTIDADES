@@ -94,8 +94,28 @@ public class BibliotecaMVC {
                             }
                         break;
                 case 5:
-                    System.out.println("\n>>> [SOPORTE]: Contacte al administrador del sistema.");
-                    break;
+                   
+    leer.nextLine();
+
+    System.out.println("=== ACTUALIZAR LIBRO ===");
+
+    System.out.print("ISBN del libro a actualizar: ");
+    String isbnActualizar = leer.nextLine();
+
+    System.out.print("Nuevo titulo: ");
+    String nuevoTitulo = leer.nextLine();
+
+    System.out.print("Nuevo autor: ");
+    String nuevoAutor = leer.nextLine();
+
+    Libro libroActualizado =
+            new Libro(isbnActualizar, nuevoTitulo, nuevoAutor);
+
+    gestion.actualizarLibro(
+            isbnActualizar,
+            libroActualizado);
+
+    break;
                 case 6:
                     System.out.println("\n>>> Cerrando sesion... Que tenga un excelente dia");
                     break;
