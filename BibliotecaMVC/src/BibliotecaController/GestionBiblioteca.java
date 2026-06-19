@@ -25,13 +25,13 @@ public class GestionBiblioteca {
     // LIBROS
     public void registrarLibro(String isbn, Libro libro) {
         mapaLibros.put(isbn, libro);
-        System.out.println("Libro guardado con éxito");
+        System.out.println("Libro guardado con exito");
     }
 
     public void actualizarLibro(String isbn, Libro libro) {
         if (mapaLibros.containsKey(isbn)) {
             mapaLibros.put(isbn, libro);
-            System.out.println("Libro actualizado con éxito");
+            System.out.println("Libro actualizado con exito");
         } else {
             System.out.println("Libro no encontrado");
         }
@@ -39,7 +39,7 @@ public class GestionBiblioteca {
 
     public void eliminarLibro(String isbn) {
         if (mapaLibros.remove(isbn) != null) {
-            System.out.println("Libro eliminado con éxito");
+            System.out.println("Libro eliminado con exito");
         } else {
             System.out.println("Libro no encontrado");
         }
@@ -48,13 +48,13 @@ public class GestionBiblioteca {
     // USUARIOS
     public void registarUsuario(Usuario usuario) {
         listaUsuarios.add(usuario);
-        System.out.println("Usuario guardado con éxito");
+        System.out.println("Usuario guardado con exito");
     }
 
     public void actualizarUsuario(int posicion, Usuario usuario) {
         if (posicion >= 0 && posicion < listaUsuarios.size()) {
             listaUsuarios.set(posicion, usuario);
-            System.out.println("Usuario actualizado con éxito");
+            System.out.println("Usuario actualizado con exito");
         } else {
             System.out.println("Usuario no encontrado");
         }
@@ -63,7 +63,7 @@ public class GestionBiblioteca {
     public void eliminarUsuario(int posicion) {
         if (posicion >= 0 && posicion < listaUsuarios.size()) {
             listaUsuarios.remove(posicion);
-            System.out.println("Usuario eliminado con éxito");
+            System.out.println("Usuario eliminado con exito");
         } else {
             System.out.println("Usuario no encontrado");
         }
@@ -72,13 +72,13 @@ public class GestionBiblioteca {
     // PRÉSTAMOS
     public void registrarPrestamo(Prestamo prestamo) {
         listaPrestamos.add(prestamo);
-        System.out.println("Préstamo registrado con éxito");
+        System.out.println("Préstamo registrado con exito");
     }
 
     public void actualizarPrestamo(int posicion, Prestamo prestamo) {
         if (posicion >= 0 && posicion < listaPrestamos.size()) {
             listaPrestamos.set(posicion, prestamo);
-            System.out.println("Préstamo actualizado con éxito");
+            System.out.println("Préstamo actualizado con exito");
         } else {
             System.out.println("Préstamo no encontrado");
         }
@@ -87,7 +87,7 @@ public class GestionBiblioteca {
     public void eliminarPrestamo(int posicion) {
         if (posicion >= 0 && posicion < listaPrestamos.size()) {
             listaPrestamos.remove(posicion);
-            System.out.println("Préstamo eliminado con éxito");
+            System.out.println("Préstamo eliminado con exito");
         } else {
             System.out.println("Préstamo no encontrado");
         }
