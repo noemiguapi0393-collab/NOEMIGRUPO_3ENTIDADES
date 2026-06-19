@@ -10,7 +10,7 @@ public class MenuPrincipal {
     // Scanner para leer la opción del usuario
     private Scanner leer = new Scanner(System.in);
 
-    // Método para mostrar el menú y retornar lo que el usuario digite
+    // Este método imprime las opciones en consola y captura la selección del usuario
     public int mostrarMenu() {
         System.out.println("\n=================================");
         System.out.println("    SISTEMA DE BIBLIOTECA MVC    ");
