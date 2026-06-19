@@ -6,6 +6,7 @@ package bibliotecamvc;
 import java.util.Scanner;
 import BibliotecaController.GestionBiblioteca;
 import BibliotecaModel.Libro;
+import BibliotecaModel.Usuario;
 import BibliotecaView.MenuPrincipal;
 
 public class BibliotecaMVC {
@@ -41,6 +42,20 @@ public class BibliotecaMVC {
                    
                 case 2:
                     System.out.println("\n>>> [REGISTRO]: Abriendo formulario de Usuarios...");
+                    leer.nextLine();
+
+                    System.out.println("\n=== REGISTRO DE USUARIO ===");
+
+                    System.out.print("Cedula: ");
+                    String cedula = leer.nextLine();
+
+                    System.out.print("Nombre: ");
+                    String nombre = leer.nextLine();
+
+                    Usuario nuevoUsuario = new Usuario(cedula, nombre);
+
+                   gestion.registarUsuario(nuevoUsuario);
+                    
                     break;
                 case 3:
                     System.out.println("\n>>> [REGISTRO]: Abriendo formulario de Préstamos...");
