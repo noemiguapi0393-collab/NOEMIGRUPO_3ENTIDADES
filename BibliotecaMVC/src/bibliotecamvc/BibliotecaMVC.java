@@ -128,6 +128,29 @@ public class BibliotecaMVC {
     gestion.eliminarLibro(isbnEliminar);
 
     break;
+    case 7:
+
+    System.out.println("\n=== ACTUALIZAR USUARIO ===");
+
+    System.out.print("Posicion del usuario a actualizar: ");
+    int posicionUsuario = leer.nextInt();
+    leer.nextLine(); // limpiar buffer
+
+    System.out.print("Nueva cedula: ");
+    String cedulaNueva = leer.nextLine();
+
+    System.out.print("Nuevo nombre: ");
+    String nombreNuevo = leer.nextLine();
+
+    Usuario usuarioActualizado =
+            new Usuario(cedulaNueva, nombreNuevo);
+
+    gestion.actualizarUsuario(
+            posicionUsuario,
+            usuarioActualizado);
+
+    break;
+    
                 case 11:
                     System.out.println("\n>>> Cerrando sesion... Que tenga un excelente dia");
                     break;
