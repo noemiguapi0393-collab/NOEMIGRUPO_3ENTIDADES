@@ -31,6 +31,8 @@ public class GestionBiblioteca {
       System.out.println("Libro guardado con exito");
   }
   public void registarUsuario(Usuario usuario){
-      
+      ListaUsuarios.add(usuario);
+      System.out.println("Usuario guardado con exito");
   }
+  
 }
