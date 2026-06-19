@@ -20,4 +20,8 @@ public class GestionBiblioteca {
   
   private ArrayList<Usuario> ListaUsuarios;
   private ArrayList<Prestamo> ListaPrestamo;
+  
+  public GestionBiblioteca(){
+      
+  }
 }
