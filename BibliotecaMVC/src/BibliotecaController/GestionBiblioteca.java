@@ -27,6 +27,10 @@ public class GestionBiblioteca {
       this.ListaPrestamo = new ArrayList<>();
   }
   public void registrarLibros(String isbn, Libro libro){
+      mapaLibros.put(isbn, libro);
+      System.out.println("Libro guardado con exito");
+  }
+  public void registarUsuario(Usuario usuario){
       
   }
 }
