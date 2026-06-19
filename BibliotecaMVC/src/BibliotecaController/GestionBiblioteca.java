@@ -38,13 +38,13 @@ public class GestionBiblioteca {
       ListaPrestamo.add(prestamo);
       System.out.println("Prestamo registrado con exito");
   }
-  private HashMap<String, Libro> getmapaLibros(){
+  public HashMap<String, Libro> getmapaLibros(){
       return mapaLibros;
   }   
-  private ArrayList<Usuario> getListaUsuarios(){
+  public ArrayList<Usuario> getListaUsuarios(){
       return ListaUsuarios;
   }
-  private ArrayList<Prestamo> getListaPrestamo(){
+  public ArrayList<Prestamo> getListaPrestamo(){
       return ListaPrestamo;
   }
 }
